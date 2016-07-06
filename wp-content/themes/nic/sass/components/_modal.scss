@@ -1,0 +1,12 @@
+.reveal-modal {
+	position: fixed;
+	.close-reveal-modal {
+		top: 0;
+		right: 8px;
+	}
+	img {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+	}
+}

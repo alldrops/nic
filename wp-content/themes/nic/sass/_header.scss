@@ -1,0 +1,43 @@
+@import 'components/_nav';
+
+.logo {
+	background: url(../images/logo-rio-v2.png) no-repeat center center;
+	background-size: cover;
+	display: block;
+	text-indent: -99999px;
+}
+
+.header {
+	height: 70px;
+	background: $black;
+	position: relative;
+
+	&__logo {
+		float: left;
+		width: 130px;
+		height: 46px;
+		margin-top: 12px;
+	}
+}
+
+.menu-icon {
+	position: absolute;
+	right: 10px;
+	top: 22px;
+	width: 35px;
+	height: 25px;
+	background: url(../images/hamburger-menu.png) no-repeat center center;
+	z-index: 10;
+}
+
+@media only screen and (min-width: 64.063em) {
+	.header {
+		height: 150px;
+
+		&__logo {
+			width: 256px;
+			height: 90px;
+			margin-top: 30px;
+		}
+	}
+}

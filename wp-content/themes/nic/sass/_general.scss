@@ -1,0 +1,109 @@
+@import 'components/_buttons';
+@import 'components/_forms';
+@import 'components/_icons';
+@import 'components/_listings';
+@import 'components/_modal';
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	min-width: 320px;
+	background: url('../images/bg3.png') repeat center center;
+}
+
+.preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	background: url('../images/rio_christ_loader.png') no-repeat center center #333;
+}
+
+.body-content {
+	transition: all 0.2s linear;
+	
+	&.loaded {
+		opacity: 1;
+	}
+}
+
+.row {
+	position: relative;
+	padding: 0 10px;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: $headline;
+	position: relative;
+}
+
+p, span {
+	font-family: $copy;
+	font-weight: 400;
+	font-size: 16px;
+	color: $gray;
+}
+
+a {
+	font-family: $copy;
+	font-size: 16px;
+	color: $gray;
+	transition: all 0.2s linear;
+
+	&:hover {
+		color: $green;
+	}
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.page-title {
+	max-width: 15em;
+	display: block;
+	margin: 1em auto;
+}
+
+.has-border {
+	position: relative;
+	padding-bottom: 1.2em;
+	&:after {
+		content: "";
+		display: block;
+		max-width: 525px;
+		width: 100%;
+		height: 14px;
+		// background: $lightgray;
+		background: url(../images/decorative-line.png) no-repeat center center;
+		background-size: cover;
+		position: relative;
+		bottom: -1em;
+		margin: 0 auto
+	}
+}
+
+.title-testimonials {
+	margin-top: 2em;
+}
+
+.map {
+	width: 100%;
+	position: relative;
+	margin: 3em 0;
+
+	#map {
+		width: 100%;
+		height: 450px;
+	}
+}

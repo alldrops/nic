@@ -1,0 +1,2 @@
+[22-Jun-2015 14:22:52] PHP Fatal error:  Call to undefined function  get_template_directory_uri() in /home2/chrisvu9/public_html/riobraziliansteakhouse/wp-content/themes/rio/header.php on line 15
+[19-Jul-2015 09:54:35] PHP Fatal error:  Call to undefined function  get_template_directory_uri() in /home2/chrisvu9/public_html/riobraziliansteakhouse/wp-content/themes/rio/header.php on line 15
