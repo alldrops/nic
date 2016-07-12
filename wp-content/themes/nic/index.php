@@ -8,7 +8,7 @@
 		<?php include("inc/top-banner.php") ?>
 
 		<section class="intro-home row">
-			<h1 class="page-title text-center has-border">The best Brazilian Steakhouse in Vancouver</h1>
+			<h1 class="page-title text-center has-border">Programs</h1>
 			<p class="text-center">
 				<?php the_content(); ?>
 			</p>

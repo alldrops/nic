@@ -24,7 +24,8 @@ add_theme_support( 'menus' );
 if ( function_exists( 'register_nav_menus' ) ) {
 	register_nav_menus(
 		array(
-		  'main-nav' => 'Main Navigation'
+          'main-nav' => 'Main Navigation',
+		  'secondary-nav' => 'Secondary Navigation'
 		)
 	);
 }
@@ -68,6 +69,13 @@ add_action('admin_menu', 'remove_menus');
 
 add_image_size( 'square_img', 300, 300, true );
 add_image_size( 'thumb_carousel', 150, 150, true );
+
+// Custom styles - admin
+
+add_action('admin_enqueue_scripts', function() {
+    wp_enqueue_style( 'acf_styles', get_template_directory_uri() . '/css/admin.css');
+});
+
 
 if ( function_exists('register_sidebar') )
 	register_sidebar();

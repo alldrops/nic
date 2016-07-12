@@ -1,0 +1,39 @@
+.box {
+  position: relative;
+  display: inline-block;
+  top: 17px; }
+
+.box:before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  width: 70px;
+  height: 40px;
+  background: #FFF;
+  margin-right: 10px;
+  border: 1px solid #e1e1e1; }
+
+.box:after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  width: 20px;
+  height: 15px;
+  background: #899194; }
+
+.box.box--left:after {
+  left: 0; }
+
+.box.box--left-center:after {
+  left: 10px; }
+
+.box.box--center:after {
+  left: 25px; }
+
+.box.box--right-center:after {
+  left: 35px; }
+
+.box.box--right:after {
+  left: 52px; }

@@ -23,6 +23,7 @@ body {
 	height: 100%;
 	overflow: visible;
 	background: url('../images/rio_christ_loader.png') no-repeat center center #333;
+	display: none;
 }
 
 .body-content {
@@ -39,21 +40,21 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-	font-family: $headline;
+	font-family: $lora;
 	position: relative;
 }
 
 p, span {
-	font-family: $copy;
+	font-family: $roboto;
 	font-weight: 400;
 	font-size: 16px;
-	color: $gray;
+	color: $grey;
 }
 
 a {
-	font-family: $copy;
+	font-family: $roboto;
 	font-size: 16px;
-	color: $gray;
+	color: $grey;
 	transition: all 0.2s linear;
 
 	&:hover {
@@ -84,7 +85,6 @@ a {
 		max-width: 525px;
 		width: 100%;
 		height: 14px;
-		// background: $lightgray;
 		background: url(../images/decorative-line.png) no-repeat center center;
 		background-size: cover;
 		position: relative;

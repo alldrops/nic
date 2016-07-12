@@ -6835,7 +6835,8 @@ body {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: url("../images/rio_christ_loader.png") no-repeat center center #333; }
+  background: url("../images/rio_christ_loader.png") no-repeat center center #333;
+  display: none; }
 
 .body-content {
   transition: all 0.2s linear; }
@@ -6847,19 +6848,19 @@ body {
   padding: 0 10px; }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Museo Slab";
+  font-family: "Lora";
   position: relative; }
 
 p, span {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
-  color: #434343; }
+  color: #484848; }
 
 a {
   font-family: "Roboto";
   font-size: 16px;
-  color: #434343;
+  color: #484848;
   transition: all 0.2s linear; }
   a:hover {
     color: #028834; }
@@ -6920,11 +6921,36 @@ a {
       font-weight: 600;
       color: #028834; }
     .main-nav li.current-menu-item.menu-reservation a {
-      color: #FFF;
+      color: #484848;
       font-weight: normal; }
   .main-nav a {
-    color: #FFF; }
+    color: #484848;
+    font-size: 18px; }
     .main-nav a:hover {
+      color: #028834; }
+
+.secondary-nav {
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  display: none; }
+  .secondary-nav ul {
+    list-style: none;
+    margin: 0; }
+  .secondary-nav li {
+    float: left;
+    line-height: 1em;
+    margin-left: 20px; }
+    .secondary-nav li.current-menu-item a {
+      font-weight: 600;
+      color: #028834; }
+    .secondary-nav li.current-menu-item.menu-reservation a {
+      color: #484848;
+      font-weight: normal; }
+  .secondary-nav a {
+    color: #484848;
+    font-size: 16px; }
+    .secondary-nav a:hover {
       color: #028834; }
 
 .left-off-canvas-menu {
@@ -6935,13 +6961,13 @@ a {
     font-weight: 600;
     color: #028834; }
   .left-off-canvas-menu li.current-menu-item.menu-reservation a {
-    color: #FFF;
+    color: #484848;
     font-weight: normal; }
   .left-off-canvas-menu a {
-    color: #FFF;
+    color: #484848;
     font-weight: 400; }
     .left-off-canvas-menu a:hover {
-      color: #028834; }
+      color: #484848; }
 
 .social-nav {
   display: none;
@@ -6972,46 +6998,48 @@ a {
   .menu-icon,
   .left-off-canvas-menu {
     display: none; }
-  .main-nav {
+  .main-nav,
+  .secondary-nav {
     display: block; }
   .social-nav {
     display: block; } }
 
 .logo {
-  background: url(../images/logo-rio-v2.png) no-repeat center center;
+  background: url("../images/newimage-logo.png") no-repeat center center;
   background-size: cover;
   display: block;
   text-indent: -99999px; }
 
 .header {
-  height: 70px;
-  background: #000;
+  height: 75px;
+  background: #FFF;
+  border-bottom: 1px solid #919191;
   position: relative; }
   .header__logo {
     float: left;
     width: 130px;
-    height: 46px;
-    margin-top: 12px; }
+    height: 35px;
+    margin-top: 18px; }
 
 .menu-icon {
   position: absolute;
   right: 10px;
   top: 22px;
-  width: 35px;
-  height: 25px;
-  background: url(../images/hamburger-menu.png) no-repeat center center;
+  width: 30px;
+  height: 30px;
+  background: url("../images/bars.svg") no-repeat center center;
   z-index: 10; }
 
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: 768px) {
   .header {
-    height: 150px; }
+    height: 137px; }
     .header__logo {
-      width: 256px;
-      height: 90px;
+      width: 300px;
+      height: 72px;
       margin-top: 30px; } }
 
 .banner {
-  min-height: 450px;
+  min-height: 350px;
   overflow: hidden; }
   .banner__box {
     background: rgba(0, 0, 0, 0.5);
@@ -7043,28 +7071,6 @@ a {
         margin-left: -45px;
         background: url(../images/rio_christ.png) no-repeat center center;
         background-size: cover; }
-  .banner--middle {
-    margin: 3em 0; }
-  .banner--locations {
-    height: calc(100vh - 70px);
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3em; }
-    .banner--locations:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5); }
-  .banner--text {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
   .banner__content {
     position: relative;
     z-index: 10; }
@@ -7087,18 +7093,33 @@ a {
   font-size: 14px;
   text-align: center;
   display: block;
-  margin-top: 15px;
-  margin-bottom: 2em; }
+  margin-top: 17px;
+  padding-bottom: 7em; }
   .scroll-tip:after {
     content: " ";
     position: absolute;
     left: 50%;
     top: 0;
-    width: 80px;
-    height: 80px;
-    margin-left: -40px;
-    background: url(../images/arrow-down.png) no-repeat center center;
-    background-size: cover; }
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    background: url("../images/down-arrow.svg") no-repeat center center;
+    background-size: cover;
+    animation: scroll_anim 4s infinite 0s; }
+
+@-webkit-keyframes scroll_anim {
+  0% {
+    top: 0; }
+  5% {
+    top: 10px; }
+  10% {
+    top: 0; }
+  15% {
+    top: 10px; }
+  20% {
+    top: 0; }
+  100% {
+    top: 0; } }
 
 @media only screen and (min-width: 64.063em) {
   .banner__box {
@@ -7116,9 +7137,6 @@ a {
 .banner.owl-carousel {
   height: calc(100vh - 110px - 7.5em); }
 
-.banner.owl-carousel--banner .owl-wrapper-outer {
-  height: 100%; }
-
 .banner.owl-carousel--banner img {
   max-width: 100%;
   max-height: 100%;
@@ -7132,44 +7150,54 @@ a {
   justify-content: center;
   float: left;
   width: 100%;
-  height: 100%; }
+  height: calc(100vh - 110px - 7.5em); }
   .banner.owl-carousel--banner .item.owl-carousel__background {
     background-size: cover !important; }
 
-.banner.owl-carousel--banner .owl-wrapper, .banner.owl-carousel--banner .owl-item {
-  height: 100%; }
-
 .banner.owl-carousel--banner .owl-controls {
-  position: relative;
-  margin-top: -30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   z-index: 30;
   opacity: 0; }
-  .banner.owl-carousel--banner .owl-controls .owl-page span {
-    background: rgba(0, 0, 0, 0.5); }
-  .banner.owl-carousel--banner .owl-controls .owl-page:hover span {
-    background: rgba(255, 255, 255, 0.4); }
-  .banner.owl-carousel--banner .owl-controls .owl-page.active span {
-    background: #FFF;
-    opacity: 1; }
-
-.owl-carousel--testimonials {
-  overflow: hidden; }
-  .owl-carousel--testimonials .item {
-    position: relative;
-    float: left;
-    width: 100%;
-    height: 100%; }
-    .owl-carousel--testimonials .item p, .owl-carousel--testimonials .item span {
-      padding: 1em; }
-  .owl-carousel--testimonials .owl-wrapper, .owl-carousel--testimonials .owl-item {
-    height: 100%;
+  .banner.owl-carousel--banner .owl-controls .owl-nav {
+    position: absolute;
+    bottom: calc((100vh - 110px - 7.5em)/2);
+    left: 0;
     width: 100%; }
-  .owl-carousel--testimonials .owl-controls {
-    position: relative;
-    margin-top: -30px;
-    z-index: 30; }
-    .owl-carousel--testimonials .owl-controls .owl-page span {
-      background: rgba(0, 0, 0, 0.7); }
+    .banner.owl-carousel--banner .owl-controls .owl-nav .owl-prev,
+    .banner.owl-carousel--banner .owl-controls .owl-nav .owl-next {
+      width: 50px;
+      height: 50px;
+      text-indent: -99999px;
+      position: absolute;
+      top: -25px; }
+    .banner.owl-carousel--banner .owl-controls .owl-nav .owl-prev {
+      background: url("../images/left.png") no-repeat center center;
+      background-size: cover;
+      left: 0; }
+    .banner.owl-carousel--banner .owl-controls .owl-nav .owl-next {
+      background: url("../images/right.png") no-repeat center center;
+      background-size: cover;
+      right: 0; }
+  .banner.owl-carousel--banner .owl-controls .owl-dots {
+    text-align: center;
+    margin-bottom: 20px; }
+    .banner.owl-carousel--banner .owl-controls .owl-dots .owl-dot {
+      display: inline-block;
+      margin: 0 10px; }
+      .banner.owl-carousel--banner .owl-controls .owl-dots .owl-dot span {
+        background: rgba(0, 0, 0, 0.6);
+        width: 20px;
+        height: 20px;
+        display: block;
+        border-radius: 50%; }
+      .banner.owl-carousel--banner .owl-controls .owl-dots .owl-dot:hover span {
+        background: rgba(255, 255, 255, 0.4); }
+      .banner.owl-carousel--banner .owl-controls .owl-dots .owl-dot.active span {
+        background: #FFF;
+        opacity: 1; }
 
 @media only screen and (min-width: 40em) and (min-height: 20em) {
   .banner.owl-carousel--banner .owl-controls {
