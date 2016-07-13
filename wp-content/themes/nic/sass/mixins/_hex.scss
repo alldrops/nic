@@ -1,0 +1,9 @@
+@mixin hex($colour) {
+    background: $colour;
+    &:before {
+        border-bottom-color: $colour;
+    }
+    &:after {
+        border-top-color: $colour;
+    }
+}

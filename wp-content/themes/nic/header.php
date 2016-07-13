@@ -18,7 +18,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
+<body <?php page_bodyclass(); ?> >
 	<div id="preloader" class="preloader"></div>
 	<div class="off-canvas-wrap" data-offcanvas>
 		<main class="inner-wrap body-content">

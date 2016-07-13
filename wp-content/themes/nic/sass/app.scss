@@ -2,6 +2,7 @@
 @import '../bower_components/foundation/scss/foundation';
 @import '_fonts';
 @import '_variables';
+@import '_mixins';
 @import '_general';
 @import '_grid';
 @import '_header';
@@ -10,3 +11,5 @@
 @import 'components/_reservation';
 @import 'components/_timeline';
 @import '_footer';
+
+@import '_pages';

@@ -76,7 +76,18 @@ add_action('admin_enqueue_scripts', function() {
     wp_enqueue_style( 'acf_styles', get_template_directory_uri() . '/css/admin.css');
 });
 
+// Add class to body
 
-if ( function_exists('register_sidebar') )
-	register_sidebar();
+function page_bodyclass() {
+    global $wp_query;
+    $page = '';
+    if (is_front_page() ) {
+           $page = 'home';
+    } elseif (is_page()) {
+       $page = $wp_query->query_vars["pagename"];
+    }
+    if ($page)
+        echo 'class= "'. $page. '"';
+}
+
 ?>

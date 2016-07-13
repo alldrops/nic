@@ -7,11 +7,22 @@
 
 		<?php include("inc/top-banner.php") ?>
 
-		<section class="intro-home row">
-			<h1 class="page-title text-center has-border">Programs</h1>
-			<p class="text-center">
-				<?php the_content(); ?>
-			</p>
+		<section class="section-programs section-programs--home">
+			<h2>Programs</h2>
+			<div class="programs-row">
+				<a href="#" class="hex program--film-acting"></a>
+				<a href="#" class="hex program--prosthetic-makeup"></a>
+				<a href="#" class="hex program--beauty-makeup"></a>
+			</div>
+			<div class="programs-row programs-row--even">
+				<a href="#" class="hex program--cosmethology"></a>
+				<a href="#" class="hex program--medical-esthetics"></a>
+			</div>
+			<div class="programs-row">
+				<a href="#" class="hex program--nail-design "></a>
+				<a href="#" class="hex program--hair-design"></a>
+				<a href="#" class="hex program--teen-career"></a>
+			</div>
 		</section>
 
 		<!-- Banner Link -->
