@@ -6821,9 +6821,8 @@ span.wpcf7-form-control-wrap {
 
 .section-programs {
   position: relative;
-  margin: 0 auto; }
-  .section-programs.section-programs--home {
-    width: 635px; }
+  margin: 0 auto;
+  width: 100%; }
 
 .programs {
   float: left;
@@ -6835,17 +6834,11 @@ span.wpcf7-form-control-wrap {
   float: left;
   width: 100%; }
 
-.programs-row.programs-row--even {
-  margin-left: 110px; }
-
 .hex {
-  width: 198px;
+  width: 100%;
   height: 200px;
   position: relative;
   float: left;
-  margin-left: 20px;
-  margin-bottom: -35px;
-  -webkit-clip-path: polygon(99px 0, 198px 50px, 198px 150px, 99px 200px, 0 150px, 0 50px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6874,6 +6867,17 @@ span.wpcf7-form-control-wrap {
     -ms-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear; }
+
+@media only screen and (min-width: 768px) {
+  .hex {
+    width: 198px;
+    margin-left: 20px;
+    margin-bottom: -35px;
+    -webkit-clip-path: polygon(99px 0, 198px 50px, 198px 150px, 99px 200px, 0 150px, 0 50px); }
+  .programs-row.programs-row--even {
+    margin-left: 110px; }
+  .section-programs--home {
+    max-width: 635px; } }
 
 .program--film-acting:before {
   content: "";
@@ -7387,7 +7391,8 @@ a {
     margin-left: -25px;
     background: url("../images/down-arrow.svg") no-repeat center center;
     background-size: cover;
-    animation: scroll_anim 4s infinite 0s; }
+    animation: scroll_anim 4s infinite 0s;
+    cursor: pointer; }
 
 @-webkit-keyframes scroll_anim {
   0% {

@@ -32,5 +32,14 @@ $(function(){
 		}
 	}
 
+	function scrollTip() {
+		$('.scroll-tip').on('click', function() {
+			$('html, body').stop().animate({
+		        'scrollTop': $('.page-content').offset().top
+			}, 500, 'swing');
+		});
+	}
+
 	carousel();
+	scrollTip();
 });
