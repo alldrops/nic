@@ -4,6 +4,7 @@
 @import 'components/_listings';
 @import 'components/_modal';
 @import 'components/_programs';
+@import 'components/_riverflow';
 
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
@@ -45,6 +46,13 @@ h1, h2, h3, h4, h5 {
 	position: relative;
 }
 
+.page-title {
+	font-size: $pageH1;
+	color: $greyLight;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
 p, span {
 	font-family: $roboto;
 	font-weight: 400;
@@ -69,12 +77,6 @@ a {
 
 .text-center {
 	text-align: center;
-}
-
-.page-title {
-	max-width: 15em;
-	display: block;
-	margin: 1em auto;
 }
 
 .has-border {

@@ -7,8 +7,16 @@
     }
 }
 
+.programs {
+    float: left;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
 .programs-row {
-    clear: left;
+    clear: both;
+    float: left;
+    width: 100%;
 }
 .programs-row.programs-row--even {
     margin-left: 110px;
@@ -16,96 +24,82 @@
 
 .hex {
     width: 198px;
-    height: 100px;
-    // background: red;
+    height: 200px;
     position: relative;
     float: left;
     margin-left: 20px;
-    margin-bottom: 65px;
+    margin-bottom: -35px;
+    -webkit-clip-path: polygon(99px 0, 198px 50px, 198px 150px, 99px 200px, 0 150px, 0 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 
     &:first-child {
         margin-left: 0;
     }
+
+    &:hover {
+        &:before {
+            opacity: 0.4;
+        }
+
+        .program__cat {
+            opacity: 0;
+        }
+    }
+
+    .program__image {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .program__cat {
+        position: relative;
+        z-index: 20;
+        color: $white;
+        font-size: $hexagonCopy;
+        text-align: center;
+        opacity: 1;
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+    }
 }
-.hex:before {
-    content: "";
-    position: absolute;
-    top: -50px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 99px solid transparent;
-    border-right: 99px solid transparent;
-    border-bottom: 50px solid transparent;
-}
-.hex:after {
-    content: "";
-    position: absolute;
-    bottom: -50px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 99px solid transparent;
-    border-right: 99px solid transparent;
-    border-top: 50px solid transparent;
-}
 
-
-
-
-
-
-.program--film-acting {
+.program--film-acting:before {
     @include hex($filmActing);
 }
 
-.program--prosthetic-makeup {
+.program--prosthetic-makeup:before {
     @include hex($prostheticMakeup);
 }
 
-.program--beauty-makeup {
+.program--beauty-makeup:before {
     @include hex($beautyMakeup);
 }
 
-.program--cosmethology {
+.program--cosmethology:before {
     @include hex($cosmethology);
 }
 
-.program--medical-esthetics {
+.program--medical-esthetics:before {
     @include hex($medicalEsthetics);
 }
 
-.program--nail-design {
+.program--nail-design:before {
     @include hex($nailDesign);
 }
 
-.program--hair-design {
+.program--hair-design:before {
     @include hex($hairDesign);
 }
 
-.program--teen-career {
+.program--teen-career:before {
     @include hex($teenCareer);
 }
-
-// .hex {
-//     float: left;
-//     margin-left: 3px;
-//     margin-bottom: -26px;
-// }
-// .hex .top {
-//     width: 0;
-//     border-bottom: 30px solid #6C6;
-//     border-left: 52px solid transparent;
-//     border-right: 52px solid transparent;
-// }
-// .hex .middle {
-//     width: 104px;
-//     height: 60px;
-//     background: #6C6;
-// }
-// .hex .bottom {
-//     width: 0;
-//     border-top: 30px solid #6C6;
-//     border-left: 52px solid transparent;
-//     border-right: 52px solid transparent;
-// }

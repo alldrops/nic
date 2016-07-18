@@ -25,7 +25,7 @@
 	}
 	a {
 		color: $grey;
-		font-size: 18px;
+		font-size: $navSize;
 
 		&:hover {
 			color: $green;
@@ -60,7 +60,7 @@
 	}
 	a {
 		color: $grey;
-		font-size: 16px;
+		font-size: $navSize;
 
 		&:hover {
 			color: $green;
@@ -69,9 +69,11 @@
 }
 
 .left-off-canvas-menu {
+	background: $greyLight;
 	padding-top: 1em;
 	ul {
 		list-style: none;
+		margin-left: 0;
 	}
 
 	li {
@@ -86,52 +88,118 @@
 	}
 
 	a {
-		color: $grey;
+		color: $white;
 		font-weight: 400;
+		display: block;
+		padding: 5px 1.1em;
+		font-size: 16px;
+		font-weight: 300;
 
 		&:hover {
 			color: $grey;
+			background: $greyLighter;
 		}	
 	}
 }
 
-.social-nav {
-	display: none;
-	position: absolute;
-	top: 30px;
-	right: 10px;
+.move-right .exit-off-canvas {
+	box-shadow: -4px 0 4px rgba(0, 0, 0, 0.2),
+				4px 0 4px rgba(0, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.8);
 
-	ul {
-		list-style: none;
-
-		li {
-			float: left;
-			margin-left: 10px;
-		}
-	}
-
-	&__icon {
-		display: block;
-		width: 25px;
-		height: 25px;
-		text-indent: -99999px;
-	}
-
-	&__facebook {
-		background: url(../images/icon_facebook.png) no-repeat center center;
-		background-size: cover;
-	}
-	&__twitter {
-		background: url(../images/icon_twitter.png) no-repeat center center;
-		background-size: cover;
-	}
-	&__instagram {
-		background: url(../images/icon_instagram.png) no-repeat center center;
-		background-size: cover;
+	&:hover {
+		background: rgba(255, 255, 255, 0.8);
 	}
 }
 
-@media only screen and (min-width: 64.063em) {
+.footer-nav {
+	position: relative;
+	clear: both;
+	margin-bottom: 30px;
+
+	ul {
+		list-style: none;
+		margin: 0;
+	}
+
+	li {
+		display: inline-block;
+		line-height: 1em;
+		margin-left: 20px;
+		
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&.current-menu-item a {
+			font-weight: 600;
+			color: $green;
+		}
+		&.current-menu-item.menu-reservation a {
+			color: $grey;
+			font-weight: normal;
+		}
+
+	}
+	a {
+		color: $grey;
+		font-size: $navSize;
+
+		&:hover {
+			color: $green;
+		}	
+	}
+	@media only screen and (min-width: 992px) {
+		float: left;
+		li {
+			float: left;
+		}
+	}
+}
+
+.social-nav {
+	position: relative;
+	text-align: center;
+	margin-bottom: 30px;
+
+	.social__icon {
+		width: 30px;
+		height: 30px;
+		text-indent: -99999px;
+		display: inline-block;
+		margin: 0 5px 10px;
+		
+		&--facebook {
+			background: url('../images/social/facebook-logo-button.svg') no-repeat center center;
+			background-size: cover;
+		}
+		&--twitter {
+			background: url('../images/social/twitter-logo-button.svg') no-repeat center center;
+			background-size: cover;
+		}
+		&--instagram {
+			background: url('../images/social/instagram-logo.svg') no-repeat center center;
+			background-size: cover;
+		}
+		&--youtube {
+			background: url('../images/social/youtube-symbol.svg') no-repeat center center;
+			background-size: cover;
+		}
+		&--google {
+			background: url('../images/social/google-plus-logo-button.svg') no-repeat center center;
+			background-size: cover;
+		}
+	}
+
+}
+
+@media only screen and (min-width: 768px) {
+	.header .menu-icon {
+		top: 45px;
+	}
+}
+
+@media only screen and (min-width: 992px) {
 	.menu-icon,
 	.left-off-canvas-menu {
 		display: none;
@@ -142,7 +210,7 @@
 		display: block;
 	}
 
-	.social-nav {
-		display: block;
+	.main-nav a {
+		text-transform: uppercase;
 	}
 }

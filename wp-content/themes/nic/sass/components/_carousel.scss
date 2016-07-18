@@ -38,6 +38,12 @@
 				bottom: calc((100vh - 110px - 7.5em)/2);
 				left: 0;
 				width: 100%;
+				opacity: 0;
+				-webkit-transition: all 0.2s linear;
+				-moz-transition: all 0.2s linear;
+				-ms-transition: all 0.2s linear;
+				-o-transition: all 0.2s linear;
+				transition: all 0.2s linear;
 
 				.owl-prev,
 				.owl-next {
@@ -85,6 +91,10 @@
 					}
 				}
 			}
+		}
+
+		&:hover .owl-controls .owl-nav {
+			opacity: 1;
 		}
 	}
 }

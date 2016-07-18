@@ -25,7 +25,8 @@ if ( function_exists( 'register_nav_menus' ) ) {
 	register_nav_menus(
 		array(
           'main-nav' => 'Main Navigation',
-		  'secondary-nav' => 'Secondary Navigation'
+		  'secondary-nav' => 'Secondary Navigation',
+          'footer-nav' => 'Footer Navigation'
 		)
 	);
 }

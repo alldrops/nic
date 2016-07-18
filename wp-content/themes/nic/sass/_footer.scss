@@ -1,42 +1,27 @@
 // FOOTER
 
 .footer {
-	padding-bottom: 50px;
+	background: $greyDark;
+	color: $white;
+	padding: 50px 0;
 	position: relative;
 	text-align: center;
+	clear: both;
 
-	&__address {
-		margin-bottom: 30px;
-		a {
-			font-weight: 300;
-			font-size: 30px;
-			margin-bottom: 20px;
-		}
-		p {
-			font-weight: 300;
-			font-size: 20px;
-			margin-bottom: 0;
-		}
+	a, p, span {
+		color: $white;
+		font-weight: 300;
 	}
 
-	.social {
-		text-align: center;
-		margin-bottom: 40px;
-
-		&__icon {
-			display: inline-block;
-			margin: 0 10px;
-			height: 50px;
-			width: 50px;
-			text-indent: -99999px;
-
-			&--facebook { background: url('../images/icon-facebook.png') no-repeat center center; background-size: cover; }
-			&--instagram { background: url('../images/icon-instagram.png') no-repeat center center; background-size: cover; }
-			&--twitter { background: url('../images/icon-twitter.png') no-repeat center center; background-size: cover; }
-		}
+	.footer__title {
+		display: block;
+		clear: both;
+		font-weight: 400;
+		font-size: 20px;
+		margin-bottom: 20px;
 	}
 
-	&__info {
+	.column--info {
 		text-align: center;
 
 		a, p {
@@ -48,6 +33,51 @@
 			text-align: center;
 			margin-top: 50px;
 		}
+		@media only screen and (min-width: 992px) {
+			text-align: left;
+		}
 	}
-	
+
+	.column--accreditations {
+		text-align: center;
+
+		.acc-icon {
+			display: inline-block;
+			text-indent: 99999px;
+			height: 105px;
+			margin: 10px 0;
+
+
+
+			&--bceqa {
+				background: url('../images/accreditations/eqa-logo.png') no-repeat center center;
+				background-size: contain;
+				width: 75px;
+			}
+
+			&--ubcp {
+				background: url('../images/accreditations/ubcp-logo.png') no-repeat center center;
+				background-size: contain;
+				width: 90px;
+			}
+
+			&--pctia {
+				background: url('../images/accreditations/pctia-logo.jpg') no-repeat center center;
+				background-size: contain;
+				width: 77px;
+			}
+
+		}
+		@media only screen and (min-width: 992px) {
+			text-align: right;
+
+			.acc-icon {
+				margin-left: 20px;
+
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+	}
 }

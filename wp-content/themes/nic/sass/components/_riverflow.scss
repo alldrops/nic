@@ -1,0 +1,79 @@
+.riverflow {
+	background: $whiteBg;
+	clear: both;
+	padding: 60px 0;
+
+	&__item {
+		background: $white;
+		margin-bottom: 20px;
+		float: left;
+
+		&__image {
+			width: 100%;
+			min-height: 350px;
+			float: left;
+		}
+		
+		&__content {
+			padding: 30px 20px;
+			float: left;
+		}
+
+		&__title {
+			font-size: $pageH2;
+			margin-bottom: 15px;
+			line-height: 1.2;
+		}
+
+		&__link {
+			font-weight: 600;
+		}
+
+		@media only screen and (min-width: 768px) {
+
+			.riverflow__item__image {
+				float: left;
+				max-width: 50%;
+				width: 100%;
+			}
+			.riverflow__item__content {
+				float: right;
+				width: 50%;
+				padding: 30px;
+			}
+
+			&:nth-child(odd) {
+				.riverflow__item__image {
+					float: right;
+				}
+				.riverflow__item__content {
+					float: left;
+				}
+			}
+		}
+
+		@media only screen and (min-width: 992px) {
+
+			.riverflow__item__image {
+				float: left;
+				max-width: 60%;
+				width: 100%;
+				max-height: 300px;
+			}
+			.riverflow__item__content {
+				float: right;
+				width: 40%;
+				padding: 50px;
+			}
+
+			&:nth-child(odd) {
+				.riverflow__item__image {
+					float: right;
+				}
+				.riverflow__item__content {
+					float: left;
+				}
+			}
+		}
+	}
+}

@@ -19,7 +19,7 @@
 </head>
 
 <body <?php page_bodyclass(); ?> >
-	<div id="preloader" class="preloader"></div>
+	<!-- <div id="preloader" class="preloader"></div> -->
 	<div class="off-canvas-wrap" data-offcanvas>
 		<main class="inner-wrap body-content">
 			<?php include("inc/mobile-navigation.php") ?>
