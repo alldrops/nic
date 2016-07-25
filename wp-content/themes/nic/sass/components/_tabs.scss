@@ -1,0 +1,133 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300);
+
+// color
+$green: #87d3b7;
+
+// TAB ~~~~~~~~~~~~~~~ (.)(.)
+
+.tab-container {
+	background: $whiteBg;
+	padding: 50px 0;
+}
+.tab {
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.5;
+	font-weight: 300;
+	color: #888;
+	-webkit-font-smoothing: antialiased;
+}
+
+.tabs {
+	display: table;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+	
+	li {
+		float: left;
+		line-height: 38px;
+		overflow: hidden;
+		padding: 0;
+		position: relative;
+	}
+
+	a {
+		background-color: $white;
+		border-bottom: 1px solid #fff;
+		color: $filmActing;
+		font-weight: 500;
+		display: block;
+		padding: 0 20px;
+		text-decoration: none;
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		border: 1px solid $white;
+		border-bottom: 2px solid $filmActing;
+
+		&:hover {
+			color: $white;
+			background: $filmActing;
+		}
+	}
+}
+
+.tab_content {
+	background: $white;
+}
+
+.tabs_item {
+	display: none;
+	padding: 20px;
+
+	h4 {
+		font-weight: bold;
+		color: $filmActing;
+    	font-size: 20px;
+	}
+
+	img {
+		max-width: 200px;
+		width: 100%;
+		float: left;
+		margin-right: 30px;
+	}
+
+	&:first-child {display: block;}
+}
+
+.current a {
+	color: $white;
+	background: $filmActing;
+}
+
+// END TAB ~~~~~~~~~~~~~~~ (.)(.)
+
+
+
+.accordion {
+	clear: both;
+	padding-top: 20px;
+	dt, dd {
+		padding: 10px;
+		border: 1px solid $whiteBg;
+		border-bottom: 0; 
+		&:last-of-type {
+        	border-bottom: 1px solid $white; 
+      	}
+      	a {
+        	display: block;
+        	color: $filmActing;
+        	font-weight: bold;
+        	position: relative;
+
+        	&:after {
+        		content:"+";
+        		position: absolute;
+        		right: 0;
+        		top: 0;
+        		color: $filmActing;
+        	}
+      	}
+   	}
+   	dt.open {
+   		a:after {
+   			content:"-";
+   			font-size: 17px;
+   		}
+   	}
+  	dd {
+		border-top: 0; 
+     	&:last-of-type {
+       		border-top: 1px solid white;
+       		position: relative;
+       		top: -1px;
+     	}
+  	}
+}

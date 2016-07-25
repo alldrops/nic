@@ -37,3 +37,30 @@
 
 .box.box--right:after {
   left: 52px; }
+
+.section-layout {
+  position: relative;
+  width: 77px;
+  height: 40px;
+  background: #FFF;
+  border: 1px solid #e1e1e1;
+  display: inline-block;
+  top: 17px; }
+  .section-layout span {
+    width: 75px;
+    height: 38px;
+    background: #028834;
+    float: left;
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+    border-top: 1px solid #FFF; }
+  .section-layout.section-layout--2-1 span:first-child {
+    width: 48px; }
+  .section-layout.section-layout--2-1 span:last-child {
+    width: 25px; }
+  .section-layout.section-layout--1-2 span:first-child {
+    width: 25px; }
+  .section-layout.section-layout--1-2 span:last-child {
+    width: 48px; }
+  .section-layout.section-layout--3 span {
+    width: 23.5px; }

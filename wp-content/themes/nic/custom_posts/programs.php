@@ -27,6 +27,7 @@ if(!(function_exists('programs_post_type'))){ //We need this conditional to be a
 			'show_ui' => true,
 			'query_var' => true,
 			'rewrite' => array('with_front' => false, 'slug' => 'programs/%school%'),
+			// 'rewrite' => array('with_front' => false, 'slug' => 'programs'),
 			'taxonomies' => array( 'school'),
 			'capability_type' => 'post',
 			'hierarchical' => false,

@@ -42,7 +42,7 @@ function display_taxonomy_terms($post_type, $display = false) {
     }
 }
 
-function wpa_products_permalinks( $post_link, $post ){
+function wpa_programs_permalinks( $post_link, $post ){
     if ( is_object( $post ) && $post->post_type == 'programs' ){
         $terms = wp_get_object_terms( $post->ID, 'school' );
         if( $terms ){

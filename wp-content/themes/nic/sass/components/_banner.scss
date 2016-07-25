@@ -62,13 +62,44 @@
     }
 }
 
+.box-banner {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    width: 500px;
+    height: 250px;
+
+    &__title {
+        font-size: 28px;
+    }
+
+    &__description {
+        margin-bottom: 10px;
+    }
+
+    &--left {
+        margin-right: 60%;
+    }
+
+    &--left-center {
+        margin-right: 40%;
+    }
+
+    &--right-center {
+        margin-left: 40%;
+    }
+
+    &--right {
+        margin-left: 60%;
+    }
+}
+
 .scroll-tip {
     position: relative;
     font-size: 14px;
     text-align: center;
     display: block;
     margin-top: 17px;
-    padding-bottom: 7em;
+    margin-bottom: 70px;
 
     &:after {
         content: " ";
@@ -127,6 +158,55 @@
         }
         &--locations {
             height: calc(100vh - 150px);
+        }
+    }
+}
+
+
+.banner-campus {
+    clear: both;
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+
+    &__item {
+        float: left;
+        width: 100%;
+        min-height: 350px;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 10;
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            -ms-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+        }
+
+        &:hover:before {
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        @media only screen and (min-width: 768px) {
+            width: 50%;
+        }
+        span {
+            position: relative;
+            display: block;
+            z-index: 20;
+            line-height: 350px;
+            font-size: $fullSectionTitle;
+            color: $white;
+            font-family: $lora;
+            text-align: center;
         }
     }
 }

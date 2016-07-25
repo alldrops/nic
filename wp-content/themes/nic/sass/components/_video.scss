@@ -1,0 +1,42 @@
+/* GENERIC PAGE */
+
+.general-content {
+    margin-bottom: 50px;
+}
+
+.general-content .row {
+    padding: 15px 0;
+}
+
+.content-img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+blockquote::after {
+    font-size: 5em;
+}
+
+.video {
+    // max-width: 768px;
+    // margin: 0 auto;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe,
+.video-wrapper object,
+.video-wrapper embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

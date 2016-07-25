@@ -12,6 +12,12 @@
     background: $white;
     border-bottom: 1px solid $greyLight;
     position: relative;
+    z-index: 100;
+
+    .row {
+        height: 100%;
+        position: static;
+    }
 
     &__logo {
         float: left;

@@ -31,7 +31,7 @@
 				<a href="#" target="_blank" title="Google+" class="social__icon social__icon--google">Google+</a>
 				<a href="#" target="_blank" title="Youtube" class="social__icon social__icon--youtube">Youtube</a>
 			</section>
-			<a href="#" class="button success">Talk to a Program Advisor</a>
+			<a href="#" data-reveal-id="modal-advisor" class="button success">Talk to a Program Advisor</a>
 		</div>
 		<div class="column small-12 medium-4 column--accreditations">
 			<div class="acc">
@@ -45,7 +45,12 @@
 	</div>
 	<div class="row">
 		<div class="column small-12 footer__info">
-			<p class="footer__copy">&copy; 2016 New Image College of Fine Arts. All rights reserved</p>
+			<p class="footer__copy">&copy; 2016 New Image College of Fine Arts. All rights reserved.</p>
 		</div>
 	</div>
 </footer>
+
+<div id="modal-advisor" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+	<?php echo do_shortcode( '[contact-form-7 id="138" title="Form Advisor"]' ); ?>
+	<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>

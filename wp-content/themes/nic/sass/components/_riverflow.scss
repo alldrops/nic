@@ -25,6 +25,10 @@
 			line-height: 1.2;
 		}
 
+		&__description {
+			margin-bottom: 15px;
+		}
+
 		&__link {
 			font-weight: 600;
 		}
@@ -63,7 +67,7 @@
 			.riverflow__item__content {
 				float: right;
 				width: 40%;
-				padding: 50px;
+				padding: 40px;
 			}
 
 			&:nth-child(odd) {

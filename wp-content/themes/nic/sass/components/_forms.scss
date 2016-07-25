@@ -12,3 +12,15 @@ span.wpcf7-form-control-wrap {
 .wpcf7-file {
 	background: transparent;
 }
+.wpcf7-form-control {
+	text-transform: none;
+}
+span.wpcf7-not-valid-tip {
+	position: absolute;
+	bottom: -18px;
+	font-size: 12px;
+}
+
+.contact-form {
+	margin-bottom: 50px;
+}
