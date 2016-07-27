@@ -1,4 +1,4 @@
-<?php /* Template Name: Template - Programs */ ?>
+<?php /* Template Name: Template - Events */ ?>
 
 <?php include("header.php"); ?>
 
@@ -8,7 +8,7 @@
 
 	<div class="page-content">
 		<section class="row">
-			<h1 class="page-title">Programs</h1>
+			<h1 class="page-title"><?php the_title(); ?></h1>
 			<div class="column small-12 medium-10 medium-centered">
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque lacinia quam vel laoreet. Praesent eget arcu venenatis, suscipit tellus quis, consectetur urna. Phasellus facilisis justo magna, in mattis urna gravida a. Duis fermentum tristique odio, non semper nisl semper id. Nullam ac luctus nisi.

@@ -6829,8 +6829,12 @@ span.wpcf7-not-valid-tip {
   position: relative;
   margin: 0 auto;
   width: 100%; }
+  .section-programs.section-programs--programs .programs-container.active .box-bg:not(.program--nic):before {
+    opacity: 0.2; }
+  .section-programs.section-programs--programs .programs-container.active .box-bg.selected:before, .section-programs.section-programs--programs .programs-container.active .box-bg:hover:before {
+    opacity: 1; }
 
-.programs {
+.programs-container {
   float: left;
   width: 100%;
   margin-bottom: 100px; }
@@ -6851,10 +6855,8 @@ span.wpcf7-not-valid-tip {
   overflow: hidden; }
   .box-bg:first-child {
     margin-left: 0; }
-  .box-bg:hover:before {
-    opacity: 0.3; }
-  .box-bg:hover .program__cat {
-    opacity: 0; }
+  .box-bg:hover:before, .box-bg.selected:before {
+    opacity: 0.8; }
   .box-bg.program--nic {
     cursor: default; }
     .box-bg.program--nic img {
@@ -6876,6 +6878,7 @@ span.wpcf7-not-valid-tip {
     font-size: 20px;
     text-align: center;
     opacity: 1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
@@ -6913,8 +6916,8 @@ span.wpcf7-not-valid-tip {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #8e09da;
-  opacity: 0.6;
+  background: #a36fc1;
+  opacity: 0.3;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -6929,8 +6932,8 @@ span.wpcf7-not-valid-tip {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #d70e0e;
-  opacity: 0.6;
+  background: #f17474;
+  opacity: 0.3;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -6945,8 +6948,8 @@ span.wpcf7-not-valid-tip {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #fd8918;
-  opacity: 0.6;
+  background: #ea9440;
+  opacity: 0.3;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -6961,8 +6964,8 @@ span.wpcf7-not-valid-tip {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #10b73f;
-  opacity: 0.6;
+  background: #54ab6d;
+  opacity: 0.3;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -6977,8 +6980,8 @@ span.wpcf7-not-valid-tip {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #145bed;
-  opacity: 0.6;
+  background: #4e77cc;
+  opacity: 0.3;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -6993,8 +6996,8 @@ span.wpcf7-not-valid-tip {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #e6149e;
-  opacity: 0.6;
+  background: #e88bc8;
+  opacity: 0.3;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -7009,8 +7012,8 @@ span.wpcf7-not-valid-tip {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #d7a10e;
-  opacity: 0.6;
+  background: #dab247;
+  opacity: 0.3;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -7025,8 +7028,8 @@ span.wpcf7-not-valid-tip {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #1ec8d3;
-  opacity: 0.6;
+  background: #1eb2bb;
+  opacity: 0.3;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -7042,7 +7045,7 @@ span.wpcf7-not-valid-tip {
   width: 100%;
   height: 100%;
   background: #000;
-  opacity: 0.6;
+  opacity: 0.3;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -7141,7 +7144,7 @@ span.wpcf7-not-valid-tip {
   .tabs a {
     background-color: #FFF;
     border-bottom: 1px solid #fff;
-    color: #8e09da;
+    color: #a36fc1;
     font-weight: 500;
     display: block;
     padding: 0 20px;
@@ -7150,10 +7153,10 @@ span.wpcf7-not-valid-tip {
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     border: 1px solid #FFF;
-    border-bottom: 2px solid #8e09da; }
+    border-bottom: 2px solid #a36fc1; }
     .tabs a:hover {
       color: #FFF;
-      background: #8e09da; }
+      background: #a36fc1; }
 
 .tab_content {
   background: #FFF; }
@@ -7163,7 +7166,7 @@ span.wpcf7-not-valid-tip {
   padding: 20px; }
   .tabs_item h4 {
     font-weight: bold;
-    color: #8e09da;
+    color: #a36fc1;
     font-size: 20px; }
   .tabs_item img {
     max-width: 200px;
@@ -7175,7 +7178,7 @@ span.wpcf7-not-valid-tip {
 
 .current a {
   color: #FFF;
-  background: #8e09da; }
+  background: #a36fc1; }
 
 .accordion {
   clear: both;
@@ -7188,7 +7191,7 @@ span.wpcf7-not-valid-tip {
       border-bottom: 1px solid #FFF; }
     .accordion dt a, .accordion dd a {
       display: block;
-      color: #8e09da;
+      color: #a36fc1;
       font-weight: bold;
       position: relative; }
       .accordion dt a:after, .accordion dd a:after {
@@ -7196,7 +7199,7 @@ span.wpcf7-not-valid-tip {
         position: absolute;
         right: 0;
         top: 0;
-        color: #8e09da; }
+        color: #a36fc1; }
   .accordion dt.open a:after {
     content: "-";
     font-size: 17px; }
@@ -7291,6 +7294,8 @@ a {
   transition: all 0.2s linear; }
   a:hover {
     color: #919191; }
+  a:focus {
+    outline: -webkit-focus-ring-color auto 0; }
 
 .description {
   max-width: 730px;

@@ -11,7 +11,7 @@
 			<div class="row">
 				<section class="section-programs section-programs--home">
 					<h2 class="page-title">Programs</h2>
-					<div class="programs">
+					<div class="programs-container">
 						<div class="programs-row">
 							<a href="#" class="box-bg hex program--film-acting"
 							style="background: url(<?php echo get_template_directory_uri(); ?>/images/examples/programs/film-acting.jpg) no-repeat center center; background-size: cover">
