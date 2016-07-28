@@ -15,11 +15,8 @@ $green: #87d3b7;
 	overflow: hidden;
 	width: 100%;
 	margin: 0 auto;
-	font-family: 'Roboto', sans-serif;
-	line-height: 1.5;
-	font-weight: 300;
+	// line-height: 1.5;
 	color: #888;
-	-webkit-font-smoothing: antialiased;
 }
 
 .tabs {
@@ -48,7 +45,6 @@ $green: #87d3b7;
 		-webkit-transition: all 0.2s ease-in-out;
 		-moz-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
-		border: 1px solid $white;
 		border-bottom: 2px solid $filmActing;
 
 		&:hover {
@@ -77,6 +73,7 @@ $green: #87d3b7;
 		width: 100%;
 		float: left;
 		margin-right: 30px;
+		margin-bottom: 30px;
 	}
 
 	&:first-child {display: block;}

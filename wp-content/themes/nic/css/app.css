@@ -6917,7 +6917,7 @@ span.wpcf7-not-valid-tip {
   width: 100%;
   height: 100%;
   background: #a36fc1;
-  opacity: 0.3;
+  opacity: 0.4;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -6933,7 +6933,7 @@ span.wpcf7-not-valid-tip {
   width: 100%;
   height: 100%;
   background: #f17474;
-  opacity: 0.3;
+  opacity: 0.4;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -6949,7 +6949,7 @@ span.wpcf7-not-valid-tip {
   width: 100%;
   height: 100%;
   background: #ea9440;
-  opacity: 0.3;
+  opacity: 0.4;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -6965,7 +6965,7 @@ span.wpcf7-not-valid-tip {
   width: 100%;
   height: 100%;
   background: #54ab6d;
-  opacity: 0.3;
+  opacity: 0.4;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -6981,7 +6981,7 @@ span.wpcf7-not-valid-tip {
   width: 100%;
   height: 100%;
   background: #4e77cc;
-  opacity: 0.3;
+  opacity: 0.4;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -6997,7 +6997,7 @@ span.wpcf7-not-valid-tip {
   width: 100%;
   height: 100%;
   background: #e88bc8;
-  opacity: 0.3;
+  opacity: 0.4;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -7013,7 +7013,7 @@ span.wpcf7-not-valid-tip {
   width: 100%;
   height: 100%;
   background: #dab247;
-  opacity: 0.3;
+  opacity: 0.4;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -7029,7 +7029,7 @@ span.wpcf7-not-valid-tip {
   width: 100%;
   height: 100%;
   background: #1eb2bb;
-  opacity: 0.3;
+  opacity: 0.4;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -7045,7 +7045,7 @@ span.wpcf7-not-valid-tip {
   width: 100%;
   height: 100%;
   background: #000;
-  opacity: 0.3;
+  opacity: 0.4;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -7123,11 +7123,7 @@ span.wpcf7-not-valid-tip {
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.5;
-  font-weight: 300;
-  color: #888;
-  -webkit-font-smoothing: antialiased; }
+  color: #888; }
 
 .tabs {
   display: table;
@@ -7152,7 +7148,6 @@ span.wpcf7-not-valid-tip {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    border: 1px solid #FFF;
     border-bottom: 2px solid #a36fc1; }
     .tabs a:hover {
       color: #FFF;
@@ -7172,7 +7167,8 @@ span.wpcf7-not-valid-tip {
     max-width: 200px;
     width: 100%;
     float: left;
-    margin-right: 30px; }
+    margin-right: 30px;
+    margin-bottom: 30px; }
   .tabs_item:first-child {
     display: block; }
 
@@ -7390,7 +7386,8 @@ a {
     color: #484848;
     font-size: 16px;
     position: relative;
-    z-index: 10; }
+    z-index: 10;
+    transition: none; }
   .main-nav > ul > li.menu-item-has-children > a {
     padding: 15px 10px 27px; }
   .main-nav > ul > li.menu-item-has-children:hover > a {
