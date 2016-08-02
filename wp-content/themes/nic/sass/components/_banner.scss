@@ -63,10 +63,13 @@
 }
 
 .box-banner {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.8);
     padding: 40px;
-    width: 500px;
+    width: 600px;
     height: 250px;
+    position: absolute;
+    top: 50%;
+    margin-top: -125px;
 
     &__title {
         font-size: 28px;
@@ -77,19 +80,26 @@
     }
 
     &--left {
-        margin-right: 60%;
+        left: 0;
+        padding-left: 100px;
     }
 
     &--left-center {
-        margin-right: 40%;
+        left: 10%;
+    }
+
+    &--center {
+        left: 50%;
+        margin-left: -300px;
     }
 
     &--right-center {
-        margin-left: 40%;
+        right: 10%;
     }
 
     &--right {
-        margin-left: 60%;
+        right: 0;
+        padding-right: 100px;
     }
 }
 

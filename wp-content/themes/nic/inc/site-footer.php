@@ -14,13 +14,12 @@
 
 			<span class="footer__title">New Image College</span>
 			<p>
-				Local: (604) 685-8807 <br>
+				Hastings: (604) 685-8807 <br>
+				Granville: (604) 685-8807 <br>
 				Toll Free: +1 (866) 354-6243
 			</p>
 			<p>
-				#1500-510 West Hastings Street <br>
-				Vancouver, BC <br>
-				V6G 1L8
+				<a href="#">info@newimage.ca</a>
 			</p>
 		</div>
 		<div class="column small-12 medium-4 column--social">
@@ -45,7 +44,10 @@
 	</div>
 	<div class="row">
 		<div class="column small-12 footer__info">
-			<p class="footer__copy">&copy; 2016 New Image College of Fine Arts. All rights reserved.</p>
+			<p class="footer__copy">
+				&copy; New Image College is a division of Global Model &amp; Talent Inc. <br>
+				© New Image College 2016. All rights reserved.
+			</p>
 		</div>
 	</div>
 </footer>

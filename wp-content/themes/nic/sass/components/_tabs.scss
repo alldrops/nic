@@ -1,13 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300);
 
-// color
-$green: #87d3b7;
-
-// TAB ~~~~~~~~~~~~~~~ (.)(.)
+// TAB
 
 .tab-container {
 	background: $whiteBg;
 	padding: 50px 0;
+	clear: both;
 }
 .tab {
 	margin-bottom: 20px;
@@ -32,12 +30,21 @@ $green: #87d3b7;
 		overflow: hidden;
 		padding: 0;
 		position: relative;
+		width: 100%;
+
+		@media only screen and (min-width: 480px) {
+			width: 50%;
+		}
+
+		@media only screen and (min-width: 992px) {
+			width: auto;
+		}
 	}
 
 	a {
 		background-color: $white;
 		border-bottom: 1px solid #fff;
-		color: $filmActing;
+		color: $black;
 		font-weight: 500;
 		display: block;
 		padding: 0 20px;
@@ -45,11 +52,11 @@ $green: #87d3b7;
 		-webkit-transition: all 0.2s ease-in-out;
 		-moz-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
-		border-bottom: 2px solid $filmActing;
+		border-bottom: 2px solid $black;
 
 		&:hover {
 			color: $white;
-			background: $filmActing;
+			background: $black;
 		}
 	}
 }
@@ -64,7 +71,7 @@ $green: #87d3b7;
 
 	h4 {
 		font-weight: bold;
-		color: $filmActing;
+		color: $black;
     	font-size: 20px;
 	}
 
@@ -81,48 +88,54 @@ $green: #87d3b7;
 
 .current a {
 	color: $white;
-	background: $filmActing;
+	background: $black;
 }
 
-// END TAB ~~~~~~~~~~~~~~~ (.)(.)
+// END TAB
 
 
 
 .accordion {
 	clear: both;
 	padding-top: 20px;
+	border-bottom: 1px solid $whiteBg;
 	dt, dd {
 		padding: 10px;
 		border: 1px solid $whiteBg;
-		border-bottom: 0; 
-		&:last-of-type {
-        	border-bottom: 1px solid $white; 
-      	}
+		border-bottom: 0;
+		margin-bottom: 0;
       	a {
         	display: block;
-        	color: $filmActing;
+        	color: $black;
         	font-weight: bold;
         	position: relative;
 
         	&:after {
-        		content:"+";
+        		content:"";
         		position: absolute;
         		right: 0;
         		top: 0;
-        		color: $filmActing;
+        		width: 20px;
+        		height: 20px;
+        		color: $grey;
+        		background: url('../images/arrow-expand.svg') no-repeat center center;
+        		background-size: cover;
         	}
       	}
    	}
+   	dt {
+   		background: $whiteBg;
+   		border-top: 1px solid $white;
+   	}
    	dt.open {
    		a:after {
-   			content:"-";
-   			font-size: 17px;
+   			background: url('../images/arrow-collapse.svg') no-repeat center center;
+        	background-size: cover;
    		}
    	}
   	dd {
 		border-top: 0; 
      	&:last-of-type {
-       		border-top: 1px solid white;
        		position: relative;
        		top: -1px;
      	}

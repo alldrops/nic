@@ -50,11 +50,35 @@ h1, h2, h3, h4, h5 {
 	position: relative;
 }
 
+h1 {
+	font-size: $pageH1;
+}
+
+h2 {
+	font-size: $pageH2;
+}
+
+h3 {
+	font-size: $pageH3;
+}
+
+h4 {
+	font-size: $pageH4;
+}
+
+h5 {
+	font-size: $pageH5;
+}
+
 .page-title {
 	font-size: $pageH1;
 	color: $greyLight;
 	text-align: center;
 	margin-bottom: 50px;
+}
+
+.section-heading {
+	margin-bottom: 20px;
 }
 
 p, span {

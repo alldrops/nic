@@ -1,23 +1,3 @@
-<!-- //repeater content_row
-
-
-//radio row_layout
-//radio opt = full
-			  21
-			  12
-			  3
-
-//flexible content content_type/content_type_2/content_type_3
-
-- layout content_text
-			- text
-		 content_image
-		 	- image
-		 content_video
-		 	- video_platform
-		 	- video_id
- -->
-
 <?php if (have_rows('content_row')) : ?>
 <section class="flexible-content">
 	<?php while (have_rows('content_row')) : the_row(); ?>
@@ -27,7 +7,14 @@
 				<div class="column small-12">
 				<?php if(have_rows('content_type')) :
 					while (have_rows('content_type')) : the_row();
-						if( get_row_layout() == 'content_text' ) :
+						if( get_row_layout() == 'content_heading' ) :
+
+							$contentHeading = get_sub_field('heading_text');
+							if(!empty($contentHeading)) :
+								echo '<h2 class="section-heading">' . $contentHeading . '</h2>';
+							endif;
+
+						elseif( get_row_layout() == 'content_text' ) :
 
 							$contentText = get_sub_field('text');
 							if(!empty($contentText)) :

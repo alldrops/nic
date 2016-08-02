@@ -10,13 +10,15 @@ $(function(){
 		// Carousel Banner
 		if($('.owl-carousel--banner .item').length < 2) {
 			$('.owl-carousel--banner').owlCarousel({
-			    loop: true,
+			    loop: false,
 			    margin: 0,
 			    nav: false,
+			    pagination: false,
 			    autoPlay: false,
 			    items: 1
 			    // items: 1
 			});
+			$('.owl-carousel--banner').addClass('owl-carousel--banner--single');
 		} else {
 			$('.owl-carousel--banner').owlCarousel({
 			    loop: true,

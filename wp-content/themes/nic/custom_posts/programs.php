@@ -1,6 +1,6 @@
 <?php
 add_action('init', 'programs_post_type');
-add_action( 'init', 'create_school_taxonomy', 0 );
+add_action( 'init', 'create_department_taxonomy', 0 );
 
 if(!(function_exists('programs_post_type'))){ //We need this conditional to be able to overwrite the function as a blank function in the child theme
 	function programs_post_type() {
@@ -26,9 +26,9 @@ if(!(function_exists('programs_post_type'))){ //We need this conditional to be a
 			'publicly_queryable' => true,
 			'show_ui' => true,
 			'query_var' => true,
-			'rewrite' => array('with_front' => false, 'slug' => 'programs/%school%'),
+			'rewrite' => array('with_front' => false, 'slug' => 'programs/%department%'),
 			// 'rewrite' => array('with_front' => false, 'slug' => 'programs'),
-			'taxonomies' => array( 'school'),
+			'taxonomies' => array( 'department'),
 			'capability_type' => 'post',
 			'hierarchical' => false,
 			'menu_position' => 9,
@@ -41,15 +41,15 @@ if(!(function_exists('programs_post_type'))){ //We need this conditional to be a
 		flush_rewrite_rules();
 	}
 }
-function create_school_taxonomy() {
+function create_department_taxonomy() {
     register_taxonomy(
-        'school',
+        'department',
         'programs',
         array(
             'labels' => array(
-                'name' => 'Schools',
-                'add_new_item' => 'Add new school',
-                'new_item_name' => "New school"
+                'name' => 'Departments',
+                'add_new_item' => 'Add new department',
+                'new_item_name' => "New department"
             ),
             'show_ui' => true,
             'show_in_nav_menus' => true,

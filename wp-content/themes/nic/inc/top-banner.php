@@ -8,12 +8,13 @@
             	<?php if($hasBox) : ?>
             		<?php 
             			$boxPosition = get_sub_field('box_position', option);
+                        $boxHeadline = get_sub_field('headline');
             			$boxHeadline = get_sub_field('headline');
             			$boxDescription = get_sub_field('description');
             			$boxCtaLink = get_sub_field('cta_link');
             			$boxCtaText = get_sub_field('cta_text');
             		?>
-	            	<div class="box-banner box-banner--right-center">
+	            	<div class="box-banner box-banner--<?php echo $boxPosition; ?>">
 	            		<?php if(!empty($boxHeadline)) { ?> 
 	            			<h2 class="box-banner__title"><?php echo $boxHeadline ?></h2>
 	            		<?php } ?>

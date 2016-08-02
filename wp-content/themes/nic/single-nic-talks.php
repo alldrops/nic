@@ -1,6 +1,4 @@
 <?php
- /*Template Name: New Template
- */
  
 get_header(); ?>
 

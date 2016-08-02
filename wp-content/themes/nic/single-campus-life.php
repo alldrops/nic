@@ -1,7 +1,5 @@
 <?php
- /*Template Name: New Template
- */
- 
+
 get_header(); ?>
 
 <?php include ("inc/top-banner.php") ?>

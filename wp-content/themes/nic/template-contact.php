@@ -7,8 +7,8 @@
     google.maps.event.addDomListener(window, 'load', init);
     function init() {
         var locations = [
-            ['West Hastings', 49.284031, -123.112327, '/locations/vancouver'],
-            ['Granville', 49.279489, -123.123088, '/locations/coquitlam']
+            ['West Hastings', 49.284031, -123.112327, '/nic/campuses/hastings-campus/'],
+            ['Granville', 49.279489, -123.123088, '/nic/campuses/granville-campus/']
         ];
 
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -63,14 +63,21 @@
 				</p>
 				<h2>Address</h2>
 				<p>
-					New Image College <br>
-					Penthouse Suite 1500 - 510 West Hastings St. <br>
+					New Image College - Beauty Wellness Centre <br>
+					Penthouse Suite 1500 - 510 West Hastings street <br>
 					Vancouver, BC - Canada <br>
-					V6B 1L8
+					V6B 1L8 <br>
+					+1 604-685-8807
+				</p>
+				<p>
+					New Image College - Performing Arts &amp; Creative Design Centre <br>
+					2nd floor - 987 Granville street <br>
+					Vancouver, BC - Canada <br>
+					V6Z 1L3 <br>
+					+1 604-697-0431
 				</p>
 				<h2>Phone</h2>
 				<p>
-					Local: (604) 685-8807 <br>
 					Toll-free: 1 (866) 354-6243
 				</p>
 				<h2>FAX</h2>
@@ -85,16 +92,12 @@
 					Charie Van Dyke, <a href="#">charie@newimage.ca</a>
 				</p>
 				<p>
-					Spanish &amp; French <br>
-					Alejandra Uribe, <a href="#">alejandra@newimage.ca</a>
+					Spanish <br>
+					Monica Gonzalez, <a href="#">monica@newimage.ca</a>
 				</p>
 				<p>
 					Portuguese <br>
 					Janaina Mallagoli, <a href="#">janaina@newimage.ca</a>
-				</p>
-				<p>
-					Japanese <br>
-					Shoko Kawakami, <a href="#">shokok@newimage.ca</a>
 				</p>
 				<p>
 					Korean <br>

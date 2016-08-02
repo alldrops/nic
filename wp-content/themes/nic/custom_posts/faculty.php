@@ -1,6 +1,6 @@
 <?php
 add_action('init', 'faculty_post_type');
-add_action( 'init', 'create_department_taxonomy', 0 );
+add_action( 'init', 'create_team_taxonomy', 0 );
 
 if(!(function_exists('faculty_post_type'))){ //We need this conditional to be able to overwrite the function as a blank function in the child theme
 	function faculty_post_type() {
@@ -27,8 +27,8 @@ if(!(function_exists('faculty_post_type'))){ //We need this conditional to be ab
 			'publicly_queryable' => true,
 			'show_ui' => true,
 			'query_var' => true,
-			'rewrite' => array('with_front' => false, 'slug' => 'faculty/%department%'),
-			'taxonomies' => array( 'department'),
+			'rewrite' => array('with_front' => false, 'slug' => 'faculty/%team%'),
+			'taxonomies' => array( 'team'),
 			'capability_type' => 'post',
 			'hierarchical' => false,
 			'menu_position' => 10,
@@ -41,15 +41,15 @@ if(!(function_exists('faculty_post_type'))){ //We need this conditional to be ab
 		flush_rewrite_rules();
 	}
 }
-function create_department_taxonomy() {
+function create_team_taxonomy() {
     register_taxonomy(
-        'department',
+        'team',
         'faculty',
         array(
             'labels' => array(
-                'name' => 'Departments',
-                'add_new_item' => 'Add new department',
-                'new_item_name' => "New department"
+                'name' => 'Teams',
+                'add_new_item' => 'Add new team',
+                'new_item_name' => "New team"
             ),
             'show_ui' => true,
             'show_in_nav_menus' => true,

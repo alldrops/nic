@@ -24,6 +24,7 @@
 				<div class="block--image-2" style="background: url('<?php $print_image = wp_get_attachment_image_src( $image2, 'full' ); echo $print_image[0]; ?>') no-repeat right center; background-size: cover; background-attachment: fixed;"></div>
 				<div class="block--image-3" style="background: url('<?php $print_image = wp_get_attachment_image_src( $image3, 'full' ); echo $print_image[0]; ?>') no-repeat left center; background-size: cover; background-attachment: fixed;"></div>
 			</div>
+			<?php include("inc/banner-campus.php") ?>
 			<section class="scroll-nic">
 				<img class="scroll-nic--img" src="<?php echo get_template_directory_uri(); ?>/images/nic.svg" alt="NIC">
 			</section>
@@ -32,8 +33,6 @@
 			
 			<?php include("inc/riverflow.php") ?>
 		</div>
-
-		<?php the_content(); ?>
 
 	<?php endwhile; ?>
 </div>
