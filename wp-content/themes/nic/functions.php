@@ -20,6 +20,14 @@ flush_rewrite_rules();
 // Add menu functionality to this theme
 add_theme_support( 'menus' );
 
+
+// Add featured image support to this theme
+add_theme_support('post-thumbnails');
+
+//
+define('UPLOADS', 'media');
+add_filter( 'http_request_host_is_external', '__return_true' );
+
 // Set each menu id
 if ( function_exists( 'register_nav_menus' ) ) {
 	register_nav_menus(
@@ -75,7 +83,7 @@ function remove_menus () {
         if(in_array($value[0] != NULL?$value[0]:"" , $restricted)){unset($menu[key($menu)]);}
     }
 }
-add_action('admin_menu', 'remove_menus');
+// add_action('admin_menu', 'remove_menus');
 
 // Image Sizes
 

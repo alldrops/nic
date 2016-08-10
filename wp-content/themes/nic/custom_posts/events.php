@@ -26,7 +26,7 @@ if(!(function_exists('events_post_type'))){ //We need this conditional to be abl
 			'publicly_queryable' => true,
 			'show_ui' => true,
 			'query_var' => true,
-			'rewrite' => array('with_front' => false, 'slug' => 'events/'),
+			'rewrite' => array('with_front' => false, 'slug' => 'events'),
 			// 'taxonomies' => array( 'school'),
 			'capability_type' => 'post',
 			'hierarchical' => false,

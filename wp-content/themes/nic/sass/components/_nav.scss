@@ -60,6 +60,10 @@
 			color: $greyLight;
 		}
 	}
+	.main-nav__programs > .sub-menu > li > a {
+		cursor: default;
+	}
+	
 	> ul > li > .sub-menu {
 		display: none;
 		position: absolute;
@@ -81,7 +85,6 @@
 
 		a {
 			text-transform: none;
-			cursor: default;
 			font-family: $roboto;
 			font-weight: 600;
 			font-size: 16px;

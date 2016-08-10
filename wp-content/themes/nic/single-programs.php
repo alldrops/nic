@@ -21,7 +21,8 @@ get_header(); ?>
         .owl-carousel--banner .box-banner__cta {
             background: <?php echo $colour; ?>;
         }
-        .owl-carousel--banner .box-banner__cta:hover {
+        .owl-carousel--banner .box-banner__cta:hover,
+        .owl-carousel--banner .box-banner__cta:focus {
             opacity: 0.8;
             background: <?php echo $colour; ?>;
         }

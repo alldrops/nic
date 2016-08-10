@@ -78,6 +78,7 @@
         font-size: $hexagonCopy;
         text-align: center;
         opacity: 1;
+        padding: 0 25px;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
         -webkit-transition: all 0.2s linear;
         -moz-transition: all 0.2s linear;
@@ -133,15 +134,15 @@
     @include hex($filmActing);
 }
 
-.program--prosthetic-makeup:before {
+.program--film-prosthetic-makeup:before {
     @include hex($prostheticMakeup);
 }
 
-.program--beauty-makeup:before {
+.program--high-fashion-beauty-makeup:before {
     @include hex($beautyMakeup);
 }
 
-.program--cosmethology:before {
+.program--esthetics-cosmethology:before {
     @include hex($cosmethology);
 }
 
@@ -149,15 +150,15 @@
     @include hex($medicalEsthetics);
 }
 
-.program--nail-design:before {
+.program--nail-art-design:before {
     @include hex($nailDesign);
 }
 
-.program--hair-design:before {
+.program--hair-styling-design:before {
     @include hex($hairDesign);
 }
 
-.program--teen-career:before {
+.program--teen-career-jumpstart:before {
     @include hex($teenCareer);
 }
 

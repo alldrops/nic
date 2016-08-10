@@ -2,6 +2,12 @@
 
 <?php include("header.php"); ?>
 
+<style>
+	html, body {
+		overflow-x: initial;
+	}
+</style>
+
 <div class="main-content">
 		
 	<?php while ( have_posts() ) : the_post(); ?>

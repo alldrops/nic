@@ -6,6 +6,10 @@ $(function(){
         e.preventDefault();
     });
 
+    $('.main-nav > ul > li.main-nav__programs > .sub-menu > li > a').on('click', function(e) {
+    	e.preventDefault();
+    })
+
 	function carousel() {
 		// Carousel Banner
 		if($('.owl-carousel--banner .item').length < 2) {
@@ -93,7 +97,7 @@ $(function(){
 
             $('html, body').stop().animate({
                 'scrollTop': $('.programs-container').offset().top - 30
-            }, 500, 'swing');
+            }, 800, 'swing');
 		});
 	}
 

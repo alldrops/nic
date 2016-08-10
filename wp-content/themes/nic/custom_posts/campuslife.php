@@ -26,7 +26,7 @@ if(!(function_exists('campus_life_post_type'))){ //We need this conditional to b
 			'publicly_queryable' => true,
 			'show_ui' => true,
 			'query_var' => true,
-			'rewrite' => array('with_front' => false, 'slug' => 'campus-life/'),
+			'rewrite' => array('with_front' => false, 'slug' => 'campus-life'),
 			// 'taxonomies' => array( 'school'),
 			'capability_type' => 'post',
 			'hierarchical' => false,

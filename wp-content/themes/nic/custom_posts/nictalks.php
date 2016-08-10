@@ -7,7 +7,7 @@ if(!(function_exists('nictalks_post_type'))){ //We need this conditional to be a
 	 
 		$labels = array(
 			'name' => _x('NIC Talks', 'post type nic-talks'),
-			'singular_name' => _x('Event', 'post type singular nic-talks'),
+			'singular_name' => _x('NIC Talk', 'post type singular nic-talks'),
 			'add_new' => _x('Add new NIC Talk', 'nic-talk'),
 			'add_new_item' => __('Add new NIC Talk'),
 			'edit_item' => __('Edit NIC Talk'),
@@ -26,7 +26,7 @@ if(!(function_exists('nictalks_post_type'))){ //We need this conditional to be a
 			'publicly_queryable' => true,
 			'show_ui' => true,
 			'query_var' => true,
-			'rewrite' => array('with_front' => false, 'slug' => 'nic-talks/'),
+			'rewrite' => array('with_front' => false, 'slug' => 'nic-talks'),
 			// 'taxonomies' => array( 'school'),
 			'capability_type' => 'post',
 			'hierarchical' => false,

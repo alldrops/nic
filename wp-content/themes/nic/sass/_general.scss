@@ -4,6 +4,7 @@
 @import 'components/_listings';
 @import 'components/_modal';
 @import 'components/_programs';
+@import 'components/_posts';
 @import 'components/_riverflow';
 @import 'components/_tabs';
 @import 'components/_video';
@@ -11,6 +12,10 @@
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+html, body {
+	overflow-x: hidden;
 }
 
 body {

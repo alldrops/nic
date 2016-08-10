@@ -7,7 +7,7 @@ if(!(function_exists('bringon_post_type'))){ //We need this conditional to be ab
 	 
 		$labels = array(
 			'name' => _x('Bring On The Success', 'post type bring-on'),
-			'singular_name' => _x('Event', 'post type singular bring-on'),
+			'singular_name' => _x('Bring On The Success', 'post type singular bring-on'),
 			'add_new' => _x('Add new story', 'bring-on'),
 			'add_new_item' => __('Add new story'),
 			'edit_item' => __('Edit story'),
@@ -26,7 +26,7 @@ if(!(function_exists('bringon_post_type'))){ //We need this conditional to be ab
 			'publicly_queryable' => true,
 			'show_ui' => true,
 			'query_var' => true,
-			'rewrite' => array('with_front' => false, 'slug' => 'bring-on/'),
+			'rewrite' => array('with_front' => false, 'slug' => 'bring-on'),
 			// 'taxonomies' => array( 'school'),
 			'capability_type' => 'post',
 			'hierarchical' => false,

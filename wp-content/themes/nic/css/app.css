@@ -6878,6 +6878,7 @@ span.wpcf7-not-valid-tip {
     font-size: 20px;
     text-align: center;
     opacity: 1;
+    padding: 0 25px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
@@ -6916,7 +6917,7 @@ span.wpcf7-not-valid-tip {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #a36fc1;
+  background: #603980;
   opacity: 0.4;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
@@ -6925,14 +6926,14 @@ span.wpcf7-not-valid-tip {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear; }
 
-.program--prosthetic-makeup:before {
+.program--film-prosthetic-makeup:before {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: #f17474;
+  background: #d70e0e;
   opacity: 0.4;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
@@ -6941,14 +6942,14 @@ span.wpcf7-not-valid-tip {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear; }
 
-.program--beauty-makeup:before {
+.program--high-fashion-beauty-makeup:before {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: #ea9440;
+  background: #eb3893;
   opacity: 0.4;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
@@ -6957,14 +6958,14 @@ span.wpcf7-not-valid-tip {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear; }
 
-.program--cosmethology:before {
+.program--esthetics-cosmethology:before {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: #54ab6d;
+  background: #03e2ba;
   opacity: 0.4;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
@@ -6980,7 +6981,7 @@ span.wpcf7-not-valid-tip {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #4e77cc;
+  background: #758db0;
   opacity: 0.4;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
@@ -6989,14 +6990,14 @@ span.wpcf7-not-valid-tip {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear; }
 
-.program--nail-design:before {
+.program--nail-art-design:before {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: #e88bc8;
+  background: #9985b3;
   opacity: 0.4;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
@@ -7005,14 +7006,14 @@ span.wpcf7-not-valid-tip {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear; }
 
-.program--hair-design:before {
+.program--hair-styling-design:before {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: #dab247;
+  background: #fce92e;
   opacity: 0.4;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
@@ -7021,14 +7022,14 @@ span.wpcf7-not-valid-tip {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear; }
 
-.program--teen-career:before {
+.program--teen-career-jumpstart:before {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: #1eb2bb;
+  background: #ee6800;
   opacity: 0.4;
   z-index: 10;
   -webkit-transition: all 0.2s linear;
@@ -7061,6 +7062,33 @@ span.wpcf7-not-valid-tip {
   @media only screen and (min-width: 768px) {
     .category-container .box-bg:not(.hex) {
       width: 25%; } }
+
+.post-block {
+  margin-bottom: 20px; }
+  .post-block a {
+    display: block; }
+    .post-block a.post-thumb {
+      margin-bottom: 10px; }
+      .post-block a.post-thumb img {
+        width: 100%;
+        max-width: 100%;
+        height: 250px;
+        max-height: 250px; }
+    .post-block a.post-title {
+      font-size: 18px; }
+  .post-block p {
+    display: block; }
+
+.container-posts {
+  margin-bottom: 100px; }
+
+.post-content {
+  margin-bottom: 100px; }
+  .post-content a {
+    display: inline-block; }
+  .post-content p {
+    display: inline-block;
+    float: left; }
 
 .riverflow {
   background: #f5f5f5;
@@ -7256,6 +7284,9 @@ blockquote::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+html, body {
+  overflow-x: hidden; }
+
 body {
   min-width: 320px;
   margin: 0 !important;
@@ -7376,6 +7407,8 @@ a {
     .main-nav li.current-menu-item a {
       font-weight: 600;
       color: #919191; }
+  .main-nav .main-nav__programs > .sub-menu > li > a {
+    cursor: default; }
   .main-nav > ul > li > .sub-menu {
     display: none;
     position: absolute;
@@ -7394,7 +7427,6 @@ a {
       width: 100%; }
     .main-nav > ul > li > .sub-menu a {
       text-transform: none;
-      cursor: default;
       font-family: "Roboto";
       font-weight: 600;
       font-size: 16px;

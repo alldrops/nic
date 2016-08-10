@@ -49,7 +49,15 @@
 				<div class="columns small-12 medium-8">
 					<?php if(have_rows('content_type')) :
 						while (have_rows('content_type')) : the_row();
-							if( get_row_layout() == 'content_text' ) :
+
+							if( get_row_layout() == 'content_heading' ) :
+
+								$contentHeading = get_sub_field('heading_text');
+								if(!empty($contentHeading)) :
+									echo '<h2 class="section-heading">' . $contentHeading . '</h2>';
+								endif;
+
+							elseif( get_row_layout() == 'content_text' ) :
 
 								$contentText = get_sub_field('text');
 								if(!empty($contentText)) :
@@ -84,7 +92,14 @@
 					<?php if(have_rows('content_type_2')) :
 						while (have_rows('content_type_2')) : the_row();
 						
-							if( get_row_layout() == 'content_text' ) :
+							if( get_row_layout() == 'content_heading' ) :
+
+								$contentHeading = get_sub_field('heading_text');
+								if(!empty($contentHeading)) :
+									echo '<h2 class="section-heading">' . $contentHeading . '</h2>';
+								endif;
+
+							elseif( get_row_layout() == 'content_text' ) :
 
 								$contentText = get_sub_field('text');
 								if(!empty($contentText)) :
@@ -119,7 +134,14 @@
 				<div class="columns small-12 medium-4">
 					<?php if(have_rows('content_type')) :
 						while (have_rows('content_type')) : the_row();
-							if( get_row_layout() == 'content_text' ) :
+							if( get_row_layout() == 'content_heading' ) :
+
+								$contentHeading = get_sub_field('heading_text');
+								if(!empty($contentHeading)) :
+									echo '<h2 class="section-heading">' . $contentHeading . '</h2>';
+								endif;
+
+							elseif( get_row_layout() == 'content_text' ) :
 
 								$contentText = get_sub_field('text');
 								if(!empty($contentText)) :
@@ -153,7 +175,14 @@
 				<div class="columns small-12 medium-8">
 					<?php if(have_rows('content_type_2')) :
 						while (have_rows('content_type_2')) : the_row();
-							if( get_row_layout() == 'content_text' ) :
+							if( get_row_layout() == 'content_heading' ) :
+
+								$contentHeading = get_sub_field('heading_text');
+								if(!empty($contentHeading)) :
+									echo '<h2 class="section-heading">' . $contentHeading . '</h2>';
+								endif;
+
+							elseif( get_row_layout() == 'content_text' ) :
 
 								$contentText = get_sub_field('text');
 								if(!empty($contentText)) :
@@ -188,7 +217,14 @@
 				<div class="columns small-12 medium-4">
 					<?php if(have_rows('content_type')) :
 						while (have_rows('content_type')) : the_row();
-							if( get_row_layout() == 'content_text' ) :
+							if( get_row_layout() == 'content_heading' ) :
+
+								$contentHeading = get_sub_field('heading_text');
+								if(!empty($contentHeading)) :
+									echo '<h2 class="section-heading">' . $contentHeading . '</h2>';
+								endif;
+
+							elseif( get_row_layout() == 'content_text' ) :
 
 								$contentText = get_sub_field('text');
 								if(!empty($contentText)) :
@@ -223,7 +259,14 @@
 					<?php if(have_rows('content_type_2')) :
 						while (have_rows('content_type_2')) : the_row();
 							
-							if( get_row_layout() == 'content_text' ) :
+							if( get_row_layout() == 'content_heading' ) :
+
+								$contentHeading = get_sub_field('heading_text');
+								if(!empty($contentHeading)) :
+									echo '<h2 class="section-heading">' . $contentHeading . '</h2>';
+								endif;
+
+							elseif( get_row_layout() == 'content_text' ) :
 
 								$contentText = get_sub_field('text');
 								if(!empty($contentText)) :
@@ -258,7 +301,14 @@
 					<?php if(have_rows('content_type_3')) :
 						while (have_rows('content_type_3')) : the_row();
 							
-							if( get_row_layout() == 'content_text' ) :
+							if( get_row_layout() == 'content_heading' ) :
+
+								$contentHeading = get_sub_field('heading_text');
+								if(!empty($contentHeading)) :
+									echo '<h2 class="section-heading">' . $contentHeading . '</h2>';
+								endif;
+
+							elseif( get_row_layout() == 'content_text' ) :
 
 								$contentText = get_sub_field('text');
 								if(!empty($contentText)) :
