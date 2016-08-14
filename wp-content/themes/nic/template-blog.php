@@ -36,8 +36,8 @@
 						
 						$postID = get_the_ID();
 						$title = get_the_title();
-						$featuredImage = wp_get_attachment_url( get_post_thumbnail_id($postID) );
-						$featuredImageFallback = 'http://localhost:3000/nic/wp-content/themes/nic/images/nic.svg';
+						$featuredImage = wp_get_attachment_url( get_post_thumbnail_id($postID), 'blog_images' );
+						$featuredImageFallback = get_template_directory_uri() . '/images/nic.svg';
 
 						if(($my_query->current_post + 1) < ($my_query->post_count)) {
 							echo '<div class="post-block columns small-12 medium-4">';

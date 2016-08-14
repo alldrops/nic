@@ -221,8 +221,10 @@ add_filter( 'manage_department_custom_column', 'jt_manage_term_custom_column', 1
 
 
 
+//Image sizes
 
-
+add_image_size( 'hero_banner', 1920, 800, true );
+add_image_size( 'blog_images', 350, 350, true );
 
 
 

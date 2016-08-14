@@ -1,17 +1,6 @@
 <footer id="footer" class="footer" role="contentinfo">
 	<div class="row">
 		<div class="column small-12 medium-4 column--info">
-			<nav class="footer-nav">
-				<?php 
-					wp_nav_menu( array(
-					    'theme_location' => 'footer-nav',
-					    'container' => false,
-					    'menu_class' => '',
-					    'menu_id' => ''
-					) ); 
-				?>
-			</nav>
-
 			<span class="footer__title">New Image College</span>
 			<p>
 				Hastings: (604) 685-8807 <br>
@@ -23,14 +12,14 @@
 			</p>
 		</div>
 		<div class="column small-12 medium-4 column--social">
-			<section class="social-nav">
-				<a href="#" target="_blank" title="Facebook" class="social__icon social__icon--facebook">Facebook</a>
-				<a href="#" target="_blank" title="Instagram" class="social__icon social__icon--instagram">Instagram</a>
-				<a href="#" target="_blank" title="Twitter" class="social__icon social__icon--twitter">Twitter</a>
-				<a href="#" target="_blank" title="Google+" class="social__icon social__icon--google">Google+</a>
-				<a href="#" target="_blank" title="Youtube" class="social__icon social__icon--youtube">Youtube</a>
-			</section>
 			<a href="#" data-reveal-id="modal-advisor" class="button success">Talk to a Program Advisor</a>
+			<section class="social-nav">
+				<a href="https://www.facebook.com/newimagecollege/" target="_blank" title="Facebook" class="social__icon social__icon--facebook">Facebook</a>
+				<a href="https://www.instagram.com/newimagecollege/" target="_blank" title="Instagram" class="social__icon social__icon--instagram">Instagram</a>
+				<!-- <a href="#" target="_blank" title="Twitter" class="social__icon social__icon--twitter">Twitter</a> -->
+				<!-- <a href="#" target="_blank" title="Google+" class="social__icon social__icon--google">Google+</a> -->
+				<a href="https://www.youtube.com/user/newimagecollege/videos" target="_blank" title="Youtube" class="social__icon social__icon--youtube">Youtube</a>
+			</section>
 		</div>
 		<div class="column small-12 medium-4 column--accreditations">
 			<div class="acc">
@@ -41,12 +30,27 @@
 		</div>
 	</div>
 	<div class="row">
+		<div class="column small-12">
+			<span class="separator"></span>
+		</div>
 	</div>
-	<div class="row">
-		<div class="column small-12 footer__info">
+	<div class="row footer-end">
+		<div class="column small-12 medium-4 footer__info">
+			<nav class="footer-nav">
+				<?php 
+					wp_nav_menu( array(
+					    'theme_location' => 'footer-nav',
+					    'container' => false,
+					    'menu_class' => '',
+					    'menu_id' => ''
+					) ); 
+				?>
+			</nav>
+		</div>
+		<div class="column small-12 medium-8 footer__info">
 			<p class="footer__copy">
 				&copy; New Image College is a division of Global Model &amp; Talent Inc. <br>
-				© New Image College 2016. All rights reserved.
+				&copy; New Image College 2016. All rights reserved.
 			</p>
 		</div>
 	</div>

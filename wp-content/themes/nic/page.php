@@ -17,6 +17,8 @@
 			</div>
 
 			<?php include("inc/flexible-content.php") ?>
+
+			<?php include("inc/banner-campus.php") ?>
 			
 			<?php include("inc/riverflow.php") ?>
 		</div>

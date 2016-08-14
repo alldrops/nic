@@ -11,8 +11,11 @@
     height: 75px;
     background: $white;
     border-bottom: 1px solid $greyLight;
-    position: relative;
     z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 
     .row {
         height: 100%;

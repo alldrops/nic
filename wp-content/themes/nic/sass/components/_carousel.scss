@@ -1,6 +1,9 @@
 .banner {
 	&.owl-carousel {
-		height: calc(100vh - 110px - 7.5em);
+		height: calc(100vh - 220px - 7.5em);
+		@media only screen and (min-width: 992px) {
+			height: calc(100vh - 110px - 7.5em);
+		}
 	}
 	&.owl-carousel--banner {
 
@@ -18,10 +21,9 @@
 			justify-content: center;
 			float: left;
 			width: 100%;
-			height: calc(100vh - 110px - 7.5em);
-			
-			&.owl-carousel__background {
-				background-size: cover !important;
+			height: calc(100vh - 220px - 7.5em);
+			@media only screen and (min-width: 992px) {
+				height: calc(100vh - 110px - 7.5em);
 			}
 		}
 

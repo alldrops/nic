@@ -14,9 +14,9 @@
 	box-sizing: border-box;
 }
 
-html, body {
-	overflow-x: hidden;
-}
+// html, body {
+// 	overflow-x: hidden;
+// }
 
 body {
 	min-width: 320px;
@@ -39,6 +39,11 @@ body {
 
 .body-content {
 	transition: all 0.2s linear;
+	padding-top: 75px;
+
+	@media only screen and (min-width: 992px) {
+		padding-top: 125px;		
+	}
 	
 	&.loaded {
 		opacity: 1;
